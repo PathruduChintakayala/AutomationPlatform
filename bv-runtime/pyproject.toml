@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bv-runtime"
+version = "0.1.0"
+description = "Runtime SDK for Bot Velocity automations"
+requires-python = ">=3.10"
+authors = [{ name = "Bot Velocity Team" }]
+license = { text = "MIT" }
+keywords = ["bot-velocity", "rpa", "agentic", "runtime"]
+readme = "README.md"
+dependencies = [
+    "httpx>=0.24.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bv"]
+
